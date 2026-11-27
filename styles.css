@@ -211,6 +211,16 @@ em { font-style: normal; color: #704159; }
 }
 .image-note { margin-top: 1rem; color: var(--muted); font-size: .8rem; }
 
+.reviews { background: var(--ivory); padding-block: var(--section-space); }
+.review-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1rem, 3vw, 2.5rem); margin-top: 2.5rem; }
+.review { margin: 0; padding: clamp(1.25rem, 2.5vw, 2rem); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.review-stars { color: #9b6b32; letter-spacing: .16em; font-size: .78rem; }
+.review blockquote { margin: 1.25rem 0 1.5rem; font: 400 clamp(1.15rem, 1.75vw, 1.45rem)/1.35 var(--serif); color: var(--ink); }
+.review figcaption { display: grid; gap: .1rem; font-size: .82rem; }
+.review figcaption strong { font-weight: 700; }
+.review figcaption span, .review-note { color: var(--muted); }
+.review-note { margin-top: 1rem; font-size: .8rem; }
+
 .story { background: var(--plum-deep); color: var(--warm-white); padding-block: var(--section-space); }
 .story-inner { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .86fr); gap: clamp(1.75rem, 7vw, 8rem); align-items: center; }
 .story-image { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; }
@@ -246,6 +256,7 @@ em { font-style: normal; color: #704159; }
     gap: 0;
   }
   .hero-inner, .intro, .section-heading, .story-inner { grid-template-columns: minmax(0, 1fr); }
+  .review-grid { grid-template-columns: minmax(0, 1fr); margin-top: 1.5rem; }
   .hero-copy { padding: 3.2rem 0 2rem; }
   .hero-image { width: calc(100% + 2 * var(--gutter)); max-width: none; margin-inline: calc(-1 * var(--gutter)); height: auto; aspect-ratio: 4 / 3; }
   h1 { font-size: clamp(2.8rem, 10vw, 4.6rem); }
