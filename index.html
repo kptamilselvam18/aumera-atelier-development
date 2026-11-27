@@ -1,41 +1,149 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Aumera Atelier - considered incense for elevated everyday rituals." />
-  <title>Aumera Atelier - Rituals in Fragrance</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <style>
-    :root{--velvet:#260e28;--velvet-2:#3b1740;--tanz:#d4af37;--tanz-light:#f3d47a;--gold:#d4af37;--cream:#301438;--ink:#d4af37;--muted:#d5b95c;--line:rgba(212,175,55,.3)}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--velvet);color:var(--gold);font-family:'DM Sans',sans-serif;line-height:1.5} a{color:inherit;text-decoration:none} button{font:inherit}
-    .noise{position:fixed;inset:0;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");z-index:10}
-    .nav{position:fixed;z-index:5;top:0;left:0;right:0;padding:25px 5vw;display:flex;justify-content:space-between;align-items:center;color:var(--gold);transition:.35s}.nav.light{color:#d4af37}.brand{font-family:'Playfair Display',serif;font-size:1.3rem;letter-spacing:.06em}.navlinks{display:flex;gap:28px;font-size:.78rem;text-transform:uppercase;letter-spacing:.14em}.navlinks a{opacity:.75;transition:.3s}.navlinks a:hover{opacity:1;color:var(--tanz-light)}.nav.light .navlinks a:hover{color:#d4af37}
-    .hero{min-height:100vh;position:relative;overflow:hidden;padding:18vh 9vw 9vh;display:flex;align-items:center;background:radial-gradient(circle at 78% 35%,#5b3a70 0,transparent 28%),linear-gradient(120deg,var(--velvet),#32153a 56%,#1c102a)}.hero:after{content:'';position:absolute;width:58vw;height:58vw;border-radius:50%;right:-17vw;top:10vh;background:radial-gradient(circle at 35% 30%,#bcb1f7, #6f5bb2 34%,#302046 70%,transparent 71%);filter:blur(1px);opacity:.65;animation:float 9s ease-in-out infinite}.hero-content{max-width:680px;position:relative;z-index:1}.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.28em;color:var(--tanz-light);margin-bottom:28px}.hero h1{font-family:'Playfair Display',serif;font-size:clamp(4rem,9vw,8.5rem);font-weight:500;line-height:.91;letter-spacing:-.06em;margin:0 0 34px}.hero h1 em{color:var(--tanz-light);font-weight:500}.hero p{max-width:420px;font-size:1.05rem;color:#e7cf82;margin-bottom:42px}.btn{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--tanz-light);border-radius:100px;padding:14px 21px;font-size:.76rem;text-transform:uppercase;letter-spacing:.14em;transition:.3s}.btn:hover{background:var(--tanz-light);color:var(--velvet);transform:translateY(-3px)}.scroll{position:absolute;bottom:28px;left:9vw;font-size:.68rem;letter-spacing:.17em;text-transform:uppercase;color:var(--muted)}
-    section{padding:115px 9vw}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:45px}.section-head h2{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,5rem);font-weight:500;line-height:.98;margin:0;max-width:620px}.section-head p{max-width:260px;color:var(--muted);font-size:.9rem}.intro{background:var(--cream);color:#d4af37;display:grid;grid-template-columns:1.2fr .8fr;gap:9vw;align-items:center}.intro h2{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,5.5rem);font-weight:500;line-height:.95;margin:0}.intro h2 em{color:#d4af37}.intro-copy{color:#d4af37;max-width:440px}.intro-copy p{font-size:1.04rem}.signature{font-family:'Playfair Display',serif;font-style:italic;font-size:1.7rem;color:#d4af37;margin-top:35px}
-    .products{background:#301438}.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:34px}.filter{border:1px solid var(--line);background:transparent;color:var(--gold);border-radius:100px;padding:9px 17px;font-size:.75rem;cursor:pointer;transition:.3s}.filter.active,.filter:hover{background:var(--tanz);border-color:var(--tanz)}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}.card{min-height:350px;padding:24px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden;background-position:center;background-size:cover;transition:.5s}.card:nth-child(1){background-image:linear-gradient(150deg,rgba(38,14,40,.15),#29122f 75%),url('https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=85')}.card:nth-child(2){background-image:linear-gradient(150deg,rgba(90,35,35,.18),#29122f 75%),url('https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=900&q=85')}.card:nth-child(3){background-image:linear-gradient(150deg,rgba(65,54,130,.18),#29122f 75%),url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85')}.card:nth-child(4){background-image:linear-gradient(150deg,rgba(120,79,39,.18),#29122f 75%),url('https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=85')}.card:nth-child(5){background-image:linear-gradient(150deg,rgba(72,36,86,.18),#29122f 75%),url('https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=85&crop=right')}.card:before{content:'';position:absolute;width:170px;height:230px;border-radius:48% 48% 35% 35%;top:34px;left:50%;transform:translateX(-50%);background:rgba(245,240,233,.12);border:1px solid rgba(255,255,255,.25);box-shadow:0 20px 45px #1d0b25;transition:.5s}.card:hover{transform:translateY(-8px)}.card:hover:before{transform:translateX(-50%) rotate(4deg) scale(1.04)}.card-content{position:relative;z-index:1}.card small{color:var(--tanz-light);text-transform:uppercase;letter-spacing:.14em;font-size:.64rem}.card h3{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:500;margin:7px 0}.card p{color:#e7cf82;font-size:.82rem;margin:0}.reveal{animation:rise .8s both}
-    .story{display:grid;grid-template-columns:.8fr 1.2fr;gap:10vw;align-items:center;background:var(--velvet)}.story-mark{aspect-ratio:1;background:radial-gradient(circle at 50% 40%,#9b8ddb 0 5%,transparent 6%),radial-gradient(circle at 50% 50%,transparent 0 39%,#7160ae 40% 41%,transparent 42%),radial-gradient(circle at 50% 50%,transparent 0 68%,#44316b 69% 70%,transparent 71%);display:grid;place-items:center;border-radius:50%;border:1px solid var(--line);animation:spin 25s linear infinite}.story-mark span{font-family:'Playfair Display',serif;font-size:1rem;letter-spacing:.2em;text-transform:uppercase;animation:spin-rev 25s linear infinite}.story h2{font-family:'Playfair Display',serif;font-size:clamp(2.7rem,5vw,5rem);font-weight:500;line-height:.98;margin:0 0 28px}.story h2 em{color:var(--tanz-light)}.story p{max-width:560px;color:#e7cf82;font-size:1.06rem}.story .name{font-family:'Playfair Display',serif;font-size:1.8rem;font-style:italic;color:var(--tanz-light);margin-top:35px}
-    .contact{background:var(--cream);color:var(--ink);text-align:center;padding-bottom:130px}.contact h2{font-family:'Playfair Display',serif;font-size:clamp(3rem,7vw,7rem);font-weight:500;line-height:.95;max-width:800px;margin:0 auto 28px}.contact h2 em{color:#d4af37}.contact p{color:#d4af37;max-width:440px;margin:0 auto 35px}.contact .btn{color:#d4af37;border-color:#d4af37}.contact .btn:hover{background:#d4af37;color:#260e28}.footer{padding:25px 9vw;display:flex;justify-content:space-between;color:var(--muted);font-size:.75rem;border-top:1px solid var(--line)}
-    @keyframes float{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(-20px,22px) rotate(4deg)}} @keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}} @keyframes spin{to{transform:rotate(360deg)}} @keyframes spin-rev{to{transform:rotate(-360deg)}}
-    @media(max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:800px){.navlinks{display:none}.hero{padding-left:7vw;padding-right:7vw}.hero:after{width:90vw;height:90vw;right:-38vw;top:20vh;opacity:.45}.hero h1{font-size:clamp(3.8rem,17vw,7rem)}section{padding:80px 7vw}.intro,.story{grid-template-columns:1fr;gap:50px}.story-mark{width:70vw;max-width:360px;margin:auto}.grid{grid-template-columns:repeat(2,1fr)}.card{min-height:300px;padding:17px}.card:before{width:125px;height:170px}.footer{padding:22px 7vw;gap:14px;flex-direction:column}}
-    @media(max-width:480px){.grid{grid-template-columns:1fr}.card{min-height:330px}.section-head{display:block}.section-head p{margin-top:20px}}
-  </style>
-<style>.intro,.products,.story,.contact,.footer{background:linear-gradient(135deg,var(--velvet),var(--velvet-2));color:var(--gold)}.intro h2,.intro-copy,.contact h2,.contact p{color:var(--gold)}</style><style>.intro{background:#3b2d66;color:var(--gold)}.products{background:#260e28}.filter.active,.filter:hover{color:var(--velvet)}.filter{color:var(--gold)}</style><style>.intro{background:linear-gradient(135deg,var(--velvet),var(--velvet-2))}</style><style>.arrow{display:inline-block;width:12px;height:12px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;position:relative;transform:rotate(45deg);margin-left:3px}.arrow:after{content:"";position:absolute;width:15px;height:1.5px;background:currentColor;right:-3px;top:4px;transform:rotate(-45deg);transform-origin:right center}</style></head>
-<body>
-  <div class="noise"></div>
-  <nav class="nav"><a class="brand" href="#top">Aumera Atelier</a><div class="navlinks"><a href="#collection">Collection</a><a href="#story">Our story</a><a href="#contact">Enquire</a></div></nav>
-  <main id="top">
-    <section class="hero"><div class="hero-content"><div class="eyebrow">A modern ritual, rooted in India</div><h1>Fragrance<br>with <em>feeling.</em></h1><p>Thoughtfully made incense for homes, spaces and moments that deserve a little more presence.</p><a class="btn" href="#collection">Discover the collection</a></div><div class="scroll">Scroll to explore</div></section>
-    <section class="intro"><div><div class="eyebrow" style="color:#d4af37">The Aumera point of view</div><h2>A softer way<br>to <em>arrive.</em></h2></div><div class="intro-copy"><p>Aumera Atelier began with a simple search: for a fragrance that felt honest, beautiful and worthy of being part of everyday life.</p><p>Our collection is an invitation to slow down, light a little warmth, and make space for what matters.</p><div class="signature">Made for your rituals.</div></div></section>
-    <section class="products" id="collection"><div class="section-head"><h2>Explore<br>the collection</h2><p>Browse by form, then find the fragrance that feels like yours.</p></div><div class="filters"><button class="filter active" data-filter="all">All forms</button><button class="filter" data-filter="sticks">Incense sticks</button><button class="filter" data-filter="cones">Cones</button><button class="filter" data-filter="havan">Havan cups</button><button class="filter" data-filter="dhoop">Dhoop</button></div><div class="grid"><article class="card reveal" data-type="sticks"><div class="card-content"><small>Incense sticks</small><h3>Quiet Ember</h3><p>Warm woods, soft smoke, and a lingering calm.</p></div></article><article class="card reveal" data-type="sticks"><div class="card-content"><small>Incense sticks</small><h3>Temple Bloom</h3><p>A floral offering with a rich, rooted finish.</p></div></article><article class="card reveal" data-type="cones"><div class="card-content"><small>Cones</small><h3>Moonlit Sandal</h3><p>Creamy sandalwood for evenings that unfold slowly.</p></div></article><article class="card reveal" data-type="havan"><div class="card-content"><small>Havan cups</small><h3>Sacred Air</h3><p>An aromatic blend for a grounded, renewing ritual.</p></div></article><article class="card reveal" data-type="dhoop"><div class="card-content"><small>Dhoop</small><h3>Velvet Resin</h3><p>Deep, resinous fragrance for a rich ritual atmosphere.</p></div></article></div></section>
-    <section class="story" id="story"><div class="story-mark"><span>Aumera</span></div><div><div class="eyebrow">The founder's story</div><h2>It began with a search for something <em>more.</em></h2><p>Our founder has always loved fragrance. It can change the feeling of a room, bring back a memory, and make an ordinary moment feel intentional. But the products she found never quite felt right.</p><p>So she kept searching. That search became Aumera Atelier, a brand shaped by her belief that fragrance should feel pure, considered, and wholesome. Each creation begins with care for the ritual as a whole, from the first spark to the last trace in the air.</p></div></section>
-    <section class="contact" id="contact"><div class="eyebrow" style="color:#d4af37">For homes, stores &amp; brands</div><h2>Let's create a little <em>atmosphere.</em></h2><p>For retail, wholesale, distribution and private label enquiries, talk to our team on WhatsApp.</p><a class="btn" href="https://wa.me/917358921555" target="_blank" rel="noreferrer">Message us on WhatsApp</a></section>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Aumera Atelier’s incense sticks, cones, havan cups and dhoop. Rooted in India and made for everyday rituals.">
+  <meta name="robots" content="noindex,follow">
+  <meta name="theme-color" content="#241523">
+  <link rel="canonical" href="https://kptamilselvam18.github.io/aumera-atelier/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Aumera Atelier">
+  <meta property="og:title" content="Aumera Atelier | Fragrance with feeling">
+  <meta property="og:description" content="Incense sticks, cones, havan cups and dhoop for everyday rituals.">
+  <meta property="og:url" content="https://kptamilselvam18.github.io/aumera-atelier-development/">
+  <meta property="og:image" content="https://kptamilselvam18.github.io/aumera-atelier-development/assets/social.jpg">
+  <meta property="og:image:alt" content="Incense, brass vessels and candlelight arranged on plum velvet.">
+  <title>Aumera Atelier | Incense for everyday rituals</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/playfair.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./site.js"></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top" aria-label="Aumera Atelier home">
+        <img src="./assets/mark.svg" alt="" width="37" height="37">
+        <span>Aumera <span class="wordmark-tail">Atelier</span></span>
+      </a>
+      <button class="menu-toggle label" type="button" aria-expanded="false" aria-controls="navigation" hidden>Menu</button>
+      <nav class="nav" id="navigation" aria-label="Main navigation">
+        <a href="#collection">Collection</a>
+        <a href="#story">Our story</a>
+        <a class="nav-enquire" href="#contact">Enquire <span class="arrow arrow-out" aria-hidden="true"></span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="label hero-kicker">Incense rooted in India</p>
+          <h1 id="hero-title">Fragrance<br>with <em>feeling.</em></h1>
+          <p class="hero-description">Thoughtfully made incense for homes, spaces and moments that deserve a little more presence.</p>
+          <a class="button button-gold" href="#collection">Discover the collection <span class="arrow arrow-down" aria-hidden="true"></span></a>
+        </div>
+        <img class="hero-image" src="./assets/ritual.webp" srcset="./assets/ritual-small.webp 768w, ./assets/ritual.webp 1440w" sizes="(max-width: 700px) 100vw, 56vw" width="1440" height="960" fetchpriority="high" alt="Incense smoke rising over brass vessels on deep plum velvet.">
+      </div>
+    </section>
+
+    <section class="intro shell" aria-labelledby="intro-title">
+      <div>
+        <p class="label">The Aumera point of view</p>
+        <h2 id="intro-title">A softer way to <em>arrive.</em></h2>
+      </div>
+      <p>Our collection is an invitation to slow down, light a little warmth and make space for what matters.</p>
+    </section>
+
+    <section class="collection" id="collection" aria-labelledby="collection-title">
+      <div class="shell">
+        <div class="section-heading">
+          <h2 id="collection-title">The incense <em>collection.</em></h2>
+          <p>Browse by form, then find the fragrance that feels like yours.</p>
+        </div>
+        <div class="filter-bar" aria-label="Filter by incense form" role="group" hidden>
+          <button type="button" data-filter="all" aria-pressed="true">All forms</button>
+          <button type="button" data-filter="sticks" aria-pressed="false">Incense sticks</button>
+          <button type="button" data-filter="cones" aria-pressed="false">Cones</button>
+          <button type="button" data-filter="havan" aria-pressed="false">Havan cups</button>
+          <button type="button" data-filter="dhoop" aria-pressed="false">Dhoop</button>
+        </div>
+        <p class="visually-hidden" id="filter-status" role="status"></p>
+        <div class="product-grid">
+          <article class="product" data-form="sticks">
+            <div class="product-image"><img src="./assets/quiet-ember.webp" width="480" height="540" loading="lazy" decoding="async" alt=""></div>
+            <p class="label">Incense sticks</p>
+            <h3>Quiet Ember</h3>
+            <p>Warm woods, soft smoke, and a lingering calm.</p>
+            <a class="product-enquire" href="https://wa.me/917358921555?text=Hello%20Aumera%20Atelier%2C%20I%27d%20like%20to%20enquire%20about%20Quiet%20Ember." aria-label="Enquire about Quiet Ember on WhatsApp">Enquire <span class="arrow arrow-out" aria-hidden="true"></span></a>
+          </article>
+          <article class="product" data-form="sticks">
+            <div class="product-image"><img src="./assets/temple-bloom.webp" width="480" height="540" loading="lazy" decoding="async" alt=""></div>
+            <p class="label">Incense sticks</p>
+            <h3>Temple Bloom</h3>
+            <p>A floral offering with a rich, rooted finish.</p>
+            <a class="product-enquire" href="https://wa.me/917358921555?text=Hello%20Aumera%20Atelier%2C%20I%27d%20like%20to%20enquire%20about%20Temple%20Bloom." aria-label="Enquire about Temple Bloom on WhatsApp">Enquire <span class="arrow arrow-out" aria-hidden="true"></span></a>
+          </article>
+          <article class="product" data-form="cones">
+            <div class="product-image"><img src="./assets/moonlit-sandal.webp" width="480" height="540" loading="lazy" decoding="async" alt=""></div>
+            <p class="label">Cones</p>
+            <h3>Moonlit Sandal</h3>
+            <p>Creamy sandalwood for evenings that unfold slowly.</p>
+            <a class="product-enquire" href="https://wa.me/917358921555?text=Hello%20Aumera%20Atelier%2C%20I%27d%20like%20to%20enquire%20about%20Moonlit%20Sandal." aria-label="Enquire about Moonlit Sandal on WhatsApp">Enquire <span class="arrow arrow-out" aria-hidden="true"></span></a>
+          </article>
+          <article class="product" data-form="havan">
+            <div class="product-image"><img src="./assets/sacred-air.webp" width="480" height="540" loading="lazy" decoding="async" alt=""></div>
+            <p class="label">Havan cups</p>
+            <h3>Sacred Air</h3>
+            <p>An aromatic blend for a grounded, renewing ritual.</p>
+            <a class="product-enquire" href="https://wa.me/917358921555?text=Hello%20Aumera%20Atelier%2C%20I%27d%20like%20to%20enquire%20about%20Sacred%20Air." aria-label="Enquire about Sacred Air on WhatsApp">Enquire <span class="arrow arrow-out" aria-hidden="true"></span></a>
+          </article>
+          <article class="product" data-form="dhoop">
+            <div class="product-image"><img src="./assets/velvet-resin.webp" width="480" height="540" loading="lazy" decoding="async" alt=""></div>
+            <p class="label">Dhoop</p>
+            <h3>Velvet Resin</h3>
+            <p>Deep, resinous fragrance for a rich ritual atmosphere.</p>
+            <a class="product-enquire" href="https://wa.me/917358921555?text=Hello%20Aumera%20Atelier%2C%20I%27d%20like%20to%20enquire%20about%20Velvet%20Resin." aria-label="Enquire about Velvet Resin on WhatsApp">Enquire <span class="arrow arrow-out" aria-hidden="true"></span></a>
+          </article>
+        </div>
+        <p class="image-note">Collection imagery is illustrative.</p>
+      </div>
+    </section>
+
+    <section class="story" id="story" aria-labelledby="story-title">
+      <div class="shell story-inner">
+        <img class="story-image" src="./assets/story.webp" width="960" height="640" loading="lazy" decoding="async" alt="Brass dishes of incense on folded plum velvet beside an oil lamp.">
+        <div class="story-copy">
+          <p class="label">The founder’s story</p>
+          <h2 id="story-title">It began with a search for something <em>more.</em></h2>
+          <p>Our founder has always loved fragrance. It can change the feeling of a room, bring back a memory and make an ordinary moment feel intentional.</p>
+          <p>Her search for a fragrance that felt right became Aumera Atelier. Each creation begins with care for the ritual as a whole, from the first spark to the last trace in the air.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact shell" id="contact" aria-labelledby="contact-title">
+      <p class="label">For homes, stores &amp; brands</p>
+      <h2 id="contact-title">Let’s create a little <em>atmosphere.</em></h2>
+      <p>For retail, wholesale, distribution and private-label enquiries, talk to our team.</p>
+      <a class="button button-dark" href="https://wa.me/917358921555">Message us on WhatsApp <span class="arrow arrow-out" aria-hidden="true"></span></a>
+    </section>
   </main>
-  <footer class="footer"><span>&copy; 2026 Aumera Atelier</span><span>Rituals in fragrance.</span></footer>
-  <script>document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const type=btn.dataset.filter;document.querySelectorAll('.card').forEach(card=>{card.style.display=type==='all'||card.dataset.type===type?'flex':'none'})}));const nav=document.querySelector('.nav'),contact=document.querySelector('.contact');new IntersectionObserver(entries=>nav.classList.toggle('light',entries[0].isIntersecting),{threshold:.18}).observe(contact);</script>
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <div>
+        <a class="footer-brand" href="#top">Aumera Atelier</a>
+        <p>Rituals in fragrance.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="#collection">Collection</a>
+        <a href="#story">Our story</a>
+        <a href="#contact">Enquire</a>
+      </nav>
+      <p class="copyright"><span class="visually-hidden">Copyright</span><span class="copyright-mark" aria-hidden="true">c</span> 2026 Aumera Atelier</p>
+    </div>
+  </footer>
 </body>
 </html>
-
